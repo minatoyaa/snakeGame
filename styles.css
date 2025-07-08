@@ -1,0 +1,83 @@
+/* Page setup */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111; /* dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Press Start 2P', monospace; /* pixel-style font */
+  color: #8e2e41; /* green text like retro terminals */
+}
+
+/* Import pixel font from Google Fonts */
+
+/* Game canvas styling */
+canvas#gameBoard {
+  background-color: #000; /* black game area */
+  border: 4px solid #8e2e41; /* glowing green border */
+  box-shadow: 0 0 15px #8e2e41; /* outer glow */
+}
+
+/* Optional: UI area like score or buttons */
+#scoreBoard {
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #8e2e41;
+  text-shadow: 0 0 5px #8e2e41;
+}
+
+
+#gameContainer{
+  text-align: center;
+}
+#gameBoard{
+  border: black 3px solid;
+}
+
+#scoreText{ 
+  font-size: 30px;
+}
+#resetBtn , #startGame{
+  font-family: "Permanent Marker" , cursive;
+  font-size: 22px;
+  border: 4x black;
+  border-radius: 15px;
+  height: 50px;
+  width: 100px;
+  cursor : pointer;
+  margin-left: 150px;
+  margin-right: 150px;
+
+
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#controls > div {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+#controls button {
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+#controls button:active {
+  background-color: #222;
+}

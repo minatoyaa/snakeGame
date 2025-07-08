@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="gameContainer">
+    <h1>Snake Game For Kushina 
+    </h1>
+    <div class="btns">
+      <button id="startGame"> Play</button>
+      <button id="resetBtn">Reset</button>
+    </div><br>
+    <canvas id="gameBoard" height="500" width="500"></canvas>
+    <p id="scoreText">0</p>
+    <div id="controls">
+      <button id="up">⬆️</button>
+      <div>
+        <button id="left">⬅️</button>
+        <button id="down">⬇️</button>
+        <button id="right">➡️</button>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <img id="gameOverImg" src="kushina.jpg" style="display: none;"  >
+
+  <script src="script.js"></script>
+</body>
+</html>
