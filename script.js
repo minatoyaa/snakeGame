@@ -42,6 +42,9 @@ window.onload = () => {
 resetBtn.addEventListener("click", () => {
   resetGame();
   gameOverSound.volume = 0;
+  bg.volume = 0.2;
+  bg.currentTime = 0;
+  bg.play();
 })
 
 startGame.addEventListener("click", () => {
